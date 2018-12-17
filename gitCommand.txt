@@ -1,0 +1,29 @@
+sudo apt-get install git
+git --version
+git config --global user.name hbquan93
+git config --global user.email quanhuynh2007@gmail.com
+git init myTest
+(Initialized empty Git repository in....path)
+cd myTest
+git branch
+gedit README
+cat README
+gedit sample.c
+
+	#include<stdio.h>
+	int main()
+	{
+		printf("Hello World!!!");
+		return 0;
+	}
+
+git add sample.c
+git add README
+
+git commit -m "step 1: commit test"
+
+git remote add origin https://github.com/hbquan93/myTest
+
+git push origin master
+(type user and pass)
+git config --list
